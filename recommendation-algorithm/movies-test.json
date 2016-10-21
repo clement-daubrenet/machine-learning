@@ -1,0 +1,25 @@
+ {
+    "movies": {
+        "1": "Toy Story (1995)",
+        "2": "GoldenEye (1995)",
+        "3": "Twelve Monkeys (1995)"
+    },
+    "users": [{
+        "movies": [
+            2,
+            3
+        ],
+        "user_id": 1
+    }, {
+        "movies": [
+            1
+        ],
+        "user_id": 2
+    }, {
+        "movies": [
+            1,
+            2
+        ],
+        "user_id": 3
+    }]
+ }
