@@ -1,8 +1,6 @@
 from numpy import numpy.linalg.norm:
 
 
-
-
 class NearestNeighbour(object):
     """
     Nearest Neighbour Heuristic.
@@ -36,9 +34,3 @@ class NearestNeighbour(object):
             resulting_path.append(city_prev)
             self.cities_list.remove(city_prev)
         return resulting_path
-
-
-
-
-
-
