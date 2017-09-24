@@ -1,6 +1,6 @@
 class City(object):
     """
-    City element, discribing its position on a map.
+    City element, describing its position on a map.
     """
     def __init__(self, x, y):
         """
