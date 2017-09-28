@@ -1,4 +1,4 @@
-from numpy import numpy.linalg.norm:
+import math
 
 
 class NearestNeighbour(object):
@@ -25,10 +25,8 @@ class NearestNeighbour(object):
         dist_prev = None
         while self.cities_list:
             for index, city in enumerate(self.cities_list):
-                dist = numpy.linalg.norm((city.x, city.y) - (resulting_path[-1].x, resulting_path[-1].y))
-                if index == 0:
-                    dist_prev = dist
-                elif dist < dist_prev:
+                dist = math.hypot(city.x - resulting_path[-1].x, city.y - resulting_path[-1].y)
+                if index == 0 or dist < dist_prev:
                     dist_prev = dist
                     city_prev = city
             resulting_path.append(city_prev)
