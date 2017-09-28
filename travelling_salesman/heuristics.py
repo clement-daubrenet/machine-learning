@@ -15,10 +15,9 @@ class NearestNeighbour(object):
 
     def execute(self, starting_city):
         """
-        Execute the Nearest Neighbour algorithm on the list of cities starting from
-        starting_city.
-        :param starting_city: the starting city (first city for the travelling salesman)
-        :return:
+        Execute the Nearest Neighbour algorithm on the list of cities starting from "starting_city".
+        :param starting_city: the starting city object (first city for the travelling salesman)
+        :return: the list of cities (path to follow) ordered
         """
         resulting_path = [starting_city]
         self.cities_list.remove(starting_city)
